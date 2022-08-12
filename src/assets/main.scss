@@ -1,0 +1,27 @@
+@use "sass:map";
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $font-family: (
+    "": "'Lato', Arial, sans-serif",
+  )
+);
+
+@use "element-plus/theme-chalk/src/index.scss" as *;
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap");
+@import "./normalize.scss";
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+html.dark,
+html {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
