@@ -105,8 +105,6 @@ const onSubmit = () => {
       } finally {
         isLoading.value = false;
       }
-    } else {
-      console.log("error submit!", fields);
     }
   });
 };
